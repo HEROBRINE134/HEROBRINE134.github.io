@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medo de Volnei</title>
+</head>
+<body>
+    <h1>O medo de Volnei</h1>
+    <p>Digite o nome:</p>
+    <input type="text" id="nome">
+    <button onclick="redirecionar()">Confirmar</button>
+
+    <script>
+        function redirecionar() {
+            var nome = document.getElementById('nome').value.toLowerCase();
+            if (nome === 'volnei') {
+                window.location.href = 'https://www.youtube.com/@volneigiovani2211';
+            } else if (nome === 'herobrine') {
+                window.location.href = 'https://www.youtube.com/channel/UCTwySVmZWqYd6I5vSUCCynQ';
+            } else {
+                alert('Nome inválido. Por favor, digite "Volnei" ou "Herobrine".');
+            }
+        }
+    </script>
+</body>
+</html>
